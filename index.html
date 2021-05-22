@@ -120,8 +120,11 @@
         var mesh = new THREE.AxesHelper()
         markerScene.add(mesh)
     
-        // add a torus knot
-        var geometry	= new THREE.CubeGeometry(1,1,1);
+
+
+        //var geometry	= new THREE.CubeGeometry(1,1,1);
+        const geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
+
         var material	= new THREE.MeshNormalMaterial({
             transparent : true,
             opacity: 0.5,
